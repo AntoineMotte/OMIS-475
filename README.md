@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Antoine Motte Presentation </title>
 </head>
 
 <body>
