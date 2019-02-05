@@ -1,0 +1,28 @@
+body { background-color: #E6E6FA;
+       color: #191970;
+       font-family: "Georgia"; }
+       
+h1 { background-color: #191970;
+     color: #E6E6FA;
+	line-height: 200%;
+	font-family: Georgia, sans-serif; 
+	text-indent: 2em;
+	text-shadow: 5px 5px 7px #CCCCCC;}
+	
+h2 { background-color: #AEAED4;
+     color: #191970;
+	 font-family:"Times New Roman", serif; 
+	 text-align: center; }
+	 
+nav a {text-decoration: none;}
+
+p { font-size: 0.8em;
+    text-indent: 3em; }
+    
+ul { font-weight: normal; }
+
+.feature { color: #C70000; }
+
+footer { color: #333333;	
+         font-size: .75em;
+         font-style: italic; }
