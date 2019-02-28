@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Image Gallery</title>
+<style>
+
+div { position: relative; }
+div ul {width: 250px; 
+		list-style-type: none; }
+div li{ display: inline; 
+		float: left; 
+		padding: 10px; }
+div img { border-style: none; }
+div a { text-decoration: none; 
+		color: #333;
+        font-style: italic; }
+div span { display: none; }
+div a:hover span { display: block; position: absolute;
+               top: 10px; left: 300px; text-align: center; }
+   
+</style>
+</head>
+
+<body>
+<header> 
+  <h1 style="text-align: center">Image Gallery</h1>
+</header>
+	<main>
+		<div>
+			<ul>
+				<li>
+					<a href="photo1.jpg"> <img src="photo1.jpg" width="100" height="75" alt="Golden Gate Bridge">
+      				<span><img src="photo1.jpg" width="350" height="250" alt="Golden Gate Bridge">
+      				<br>Golden Gate Bridge </span></a>
+      				</li>
+				<li>
+				  <a href="photo2.jpg"> <img src="photo2.jpg" width="100" height="75" alt="Rocky Shoreline">
+      				<span><img src="photo2.jpg" width="350" height="250" alt="Rocky Shoreline">
+      				<br>Rocky Shoreline </span></a>
+				
+				</li>
+				<li>
+				   <a href="photo3.jpg"> <img src="photo3.jpg" width="100" height="75" alt="Rocky Shoreline">
+      				<span><img src="photo3.jpg" width="350" height="250" alt="Rocky Shoreline">
+      				<br>Waves Crashing </span></a>
+				  
+				</li>
+				<li>
+				  <a href="photo4.jpg"> <img src="photo4.jpg" width="100" height="75" alt="Rocky Shoreline">
+      				<span><img src="photo4.jpg" width="350" height="250" alt="Rocky Shoreline">
+      				<br> Ocean Sunset</span></a>
+				 
+				</li>
+				<li>
+				  <a href="photo5.jpg"> <img src="photo5.jpg" width="100" height="75" alt="Rocky Shoreline">
+      				<span><img src="photo5.jpg" width="350" height="250"alt="Rocky Shoreline">
+      				<br> Waterfall on the beach</span></a>
+				  
+				</li>
+				<li>
+				  <a href="photo6.jpg"> <img src="photo6.jpg" width="100" height="75" alt="Rocky Shoreline">
+      				<span><img src="photo6.jpg" width="350" height="250" alt="Rocky Shoreline">
+      				<br> Fog moving in</span></a>
+				  
+				</li>
+			</ul>
+		</div>
+	</main>
+
+
+</body>
+</html>
