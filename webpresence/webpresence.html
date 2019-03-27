@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Antoine's Webpresence</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="menu.css">
+
+<style>
+body{background-color:#DCDCDC	;
+}
+
+</style>
+
+
+<body>
+
+<nav id="navbar">
+<ul>
+  <li><a class="active" href="#home" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
+  <li><a class="" href="#news">EDUCATION</a></li>
+  <li><a class="" href="#contact">EXPERIENCES</a></li>
+  <li><a class="" href="#contact">SPORTS</a></li>
+  <li><a class="" href="#contact">TRAVELS</a></li>
+</ul>
+</nav>
+
+<script>
+var nav = document.getElementById("navbar");
+var btns = nav.getElementsByTagName("LI");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += "active";
+  });
+}
+</script>
+
+</body>
