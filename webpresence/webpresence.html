@@ -6,9 +6,11 @@
 integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 <link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="ContactForm.css">
+
 
 <style>
-body{background-color:#DCDCDC	;
+body{background-color:#DCDCDC;
 }
 
 </style>
@@ -38,4 +40,26 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
 
+<div class="email">
+	<form method="POST" action="https://formspree.io/antoine-motte@hotmail.fr">
+    <div class="row">
+    <div class="col-75">
+    <h3><bold>Send Me A Message:</bold></h3>
+      <label for="fname">Your Email Address</label><br>
+    <input type="email" name="email" placeholder="Your email">
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-75">
+      <label for="subject">Your Message</label>
+      <textarea style="height:100px"  name="message" placeholder="Write Your Message"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
 </body>
+</html>
