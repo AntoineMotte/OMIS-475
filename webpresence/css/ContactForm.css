@@ -2,6 +2,7 @@
 
 .email{
   border-radius: 10px;
+  border:5px solid #1560BD;
   background-color: #f2f2f2;
   width:350px;
   text-align:center;
