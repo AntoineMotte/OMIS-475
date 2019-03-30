@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>Antoine's Webpresence</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/ContactForm.css">
+
+
+<style>
+* { box-sizing: border-box; } 
+
+body{background-color:#DCDCDC;
+}
+
+header { background-image: url(images/surf.png);
+		 background-size: cover;
+		 position:static;
+         background-repeat: no-repeat;  
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 { position:relative;	
+     font-size: 200%;
+     padding: 5%;
+     font-family:"Gill Sans", sans-serif;	
+     color:white;
+}
+
+.left, .right{
+	position:relative;
+	float: left;
+	width: 25%;
+	text-align:center;
+
+}
+.center{
+	position:relative;
+	float: left;
+	width: 50%;
+	text-align:center;
+
+}
+
+.border{border-radius:10px;
+	border:5px solid #1560BD;
+	}
+	
+.margin1{margin-right:50px;
+  		 margin-left:50px;
+}
+.margin2{margin-right:30px;
+  		 margin-left:30px;
+		 display:inline-block;
+}
+
+</style>
+
+<header>
+    <h1>ANTOINE'S WEBPRESENCE</h1>
+<nav id="navbar">
+<ul>
+  <li><a class="active" href="#home" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
+  <li><a class="" href="#news">EDUCATION</a></li>
+  <li><a class="" href="#contact">EXPERIENCES</a></li>
+  <li><a class="" href="#contact">SPORTS</a></li>
+  <li><a class="" href="#contact">TRAVELS</a></li>
+</ul>
+</nav>
+
+<script>
+var nav = document.getElementById("navbar");
+var btns = nav.getElementsByTagName("LI");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += "active";
+  });
+}
+</script>
+</header>
+
+
+<body>
+
+<div style="padding-top:10px;" class="row">
+	<div style="padding-top:40px;" class="left">
+	</div>
+	<div class="center">
+	<div class="email">
+    					<h3><bold>Music Survey</bold></h3>
+    					<form action="https://formspree.io/antoine-motte@hotmail.fr">
+    					<div class="row">
+    					<div class="col-75">
+      					Name:<br>
+    					<input type="text" name="name" placeholder="Your name" required><br>
+    					Email:<br>
+    					<input type="email" name="email" placeholder="your email" required><br>
+    					<fieldset style="margin:25px 50px;" multiple>
+    						<legend>Select Your Favorite Types of Music:</legend>
+    						<div style="display:inline-block; text-align:left;">
+    						<input type="radio" name="music" value="Pop"> Pop
+  							<input type="radio" name="music" value="Classical"> Classical
+  							<input type="radio" name="music" value="Rock"> Rock<br>
+  							<input type="radio" name="music" value="Folk"> Folk<br>
+  							<input type="radio" name="music" value="Rap"> Rap<br>
+  							<input type="radio" name="music" value="Other"> Other
+  							</div>
+  						</fieldset>
+  						<fieldset style="margin:25px 50px;">
+    						<legend>Select How Often You Purchase Music CDs:</legend>
+    						<div style="display:inline-block; text-align:left;">
+    						<input type="radio" name="time" value=""> Weekly<br>
+  							<input type="radio" name="time" value=""> A few CDs each year<br>
+  							<input type="radio" name="time" value=""> Monthly<br>
+  							<input type="radio" name="time" value=""> Never purchase
+  							</div>
+  						</fieldset>
+  							<datalist>
+    							<option value="At home">
+    							<option value="In the car">
+    							<option value="Anywhere (Spotify)">
+							</datalist>
+						<label for="subject">What role does music represente in your life ?</label>
+						<textarea style="padding:30px; margin-bottom:20px;" name="message" placeholder="Write Your Message" maxlength="1600"></textarea>
+  					</div>
+  					</div>
+  					<div style="display:inline-block; margin-bottom:20px;">
+    					<button type="submit" value="Submit"> Submit</button>
+    					<button type="reset" value="Reset">Reset</button>
+    				</div>
+			  </form>
+
+	</div>
+	</div>
+	<div class="right" style="padding-top:30px; padding-left:20px;">
+	</div>
+</div>
+
+<footer style="text-align:center;" role="contentinfo">
+<hr>
+<small><i>&copy All rights are reserved to Antoine Motte 2019</i></small>
+</footer>
+</body>
+</html>
