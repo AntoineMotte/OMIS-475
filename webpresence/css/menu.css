@@ -1,0 +1,32 @@
+ul {
+  list-style-type: none;
+  font-family:"Arial";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  display: inline-block;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+li a:hover{
+background-color: lightblue;}
+
+
+.active {
+  background-color: #1560BD		;
+}
