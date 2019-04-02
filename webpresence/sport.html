@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<title>Antoine's Webpresence</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/ContactForm.css">
+
+
+<style>
+* { box-sizing: border-box; } 
+
+body{background-color:#DCDCDC;
+}
+
+section{background-image:url(images/jp.jpg);
+		background-size: cover;
+		background-position:center;
+    	background-repeat: no-repeat; 
+    	width:auto;
+    	height:auto;
+}
+
+header { background-image: url(images/surf.png);
+		 background-size: cover;
+		 position:static;
+         background-repeat: no-repeat;  
+}
+
+span {display: inline;}
+
+a { text-decoration:none;
+	color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+.left, .right{
+	position:relative;
+	width: 50%;
+	text-align:center;
+	float:left;
+	
+
+}
+
+
+.border{border-radius:10px;
+	border:5px solid #1560BD;
+	}
+	
+table{border: 3px solid #1560BD	;
+      border-collapse: collapse;
+      width:80%;
+	  margin:auto;
+	  background-color:#DCDCDC;
+	  opacity: 0.9;
+
+}
+
+#windsurf{font-size:150%;
+		padding:20px;
+		font-weight:bold;
+		font-family:"Gill Sans", sans-serif;}	
+
+
+@media screen and (max-width: 800px) {
+.left, .right{
+    width: 90%;
+    margin-top: 0;
+  }
+}
+</style>
+
+<header>
+    <h1>ANTOINE'S WEBPRESENCE</h1>
+<nav id="navbar">
+<ul>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/homePage.html" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/education.html">EDUCATION</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/experience.html">EXPERIENCES</a></li>
+  <li><a class="active" href="https://antoinemotte.github.io/omis-475/webpresence/sport.html">SPORTS</a></li>
+  <li><a class="" href="#travel.html">TRAVELS</a></li>
+</ul>
+</nav>
+
+<script>
+var nav = document.getElementById("navbar");
+var btns = nav.getElementsByTagName("LI");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += "active";
+  });
+}
+</script>
+</header>
+<body>
+<section>
+	<div class="row">
+		<div style="margin-bottom:50px;" class="left">
+		<p id="windsurf">My favorite sport is WINDSURF</p>
+		
+		<div style="margin:auto; width:60%;" class="email">
+		<h3><bold>Windsurf Survey</bold></h3>
+    					<form action="https://formspree.io/antoine-motte@hotmail.fr" method="POST">
+    					<div class="row">
+    					<div class="col-75">
+      					Your Name:<br>
+    					<input type="text" name="name" placeholder="John Smith" required><br>
+    					Your Email Address:<br>
+    					<input type="email" name="email" placeholder="h@gmail.com" required><br>
+    					<fieldset style="margin:15px 20px;" multiple>
+    						<legend>Have you ever heard about Windsurf ?</legend>
+    						<div style="display:inline-block; text-align:left;">
+    						<input type="radio" name="windsurf" value="YES"> YES
+  							<input type="radio" name="windsurf" value="NO"> NO
+  							</div>
+  						</fieldset>
+  						<fieldset style="margin:15px 20px;">
+    						<legend>Have you ever done some Windsurf ?</legend>
+    						<div style="display:inline-block; text-align:left;">
+    						<input type="radio" name="time" value=""> Every Year<br>
+  							<input type="radio" name="time" value=""> A Couple Of Times<br>
+  							<input type="radio" name="time" value=""> One Time<br>
+  							<input type="radio" name="time" value=""> Never
+  							</div>
+  						</fieldset>
+						  
+						<label for="subject">Send Me A Message About Windsurf If You Want</label>
+						<textarea style="padding:30px; margin-bottom:5px;" name="message" placeholder="windsurfing message" maxlength="1600"></textarea>
+  					</div>
+  					</div>
+  					<div style="display:inline-block; margin-bottom:20px;">
+    					<button type="submit" value="Submit"> Submit</button>
+    					<button type="reset" value="Reset">Reset</button>
+    				</div>
+			  </form>
+			  </div>
+		</div>
+		<div id="windsurf" class="right">
+		<p>If you want to see more pictures about windsurf go to this webpage:</p>
+		<a href="https://www.w3schools.com" target="_blank">Windsurfing Pictures</a> 
+		</div>
+	</div>
+	
+</section>
+</body>
+<footer style="text-align:center;" role="contentinfo">
+<hr>
+<small><i>&copy All rights are reserved to Antoine Motte 2019</i></small>
+</footer>
+</html>
