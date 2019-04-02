@@ -17,7 +17,7 @@ body{background-color:#DCDCDC;
 
 header { background-image: url(images/surf.png);
 		 background-size: cover;
-		 position:static;
+		 position:relative;
          background-repeat: no-repeat;  
 }
 
@@ -55,16 +55,23 @@ h1 { position:relative;
 		 display:inline-block;
 }
 
+@media screen and (max-width: 800px) {
+.left, .right, .center{
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
 </style>
 
 <header>
     <h1>ANTOINE'S WEBPRESENCE</h1>
 <nav id="navbar">
 <ul>
-  <li><a class="active" href="#home" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
-  <li><a class="" href="#news">EDUCATION</a></li>
-  <li><a class="" href="#contact">EXPERIENCES</a></li>
-  <li><a class="" href="#contact">SPORTS</a></li>
+  <li><a class="active" href="homePage.html" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
+  <li><a class="" href="education.html">EDUCATION</a></li>
+  <li><a class="" href="experience.html">EXPERIENCES</a></li>
+  <li><a class="" href="sport.html">SPORTS</a></li>
   <li><a class="" href="#contact">TRAVELS</a></li>
 </ul>
 </nav>
@@ -105,20 +112,20 @@ for (var i = 0; i < btns.length; i++) {
 		</p>
 
 	</div>
-	<div style="padding-top:30px; padding-left:20px;" class="right">
+	<div style="padding-top:30px; padding-left:50px;" class="right">
 		<div class="email">
 			<form method="POST" action="https://formspree.io/antoine-motte@hotmail.fr	">
     			<div class="row">
     				<div class="col-75">
     					<h3><bold>Send Me A Message:</bold></h3>
       					<label for="fname">Your Email Address</label><br>
-    					<input type="email" name="email" placeholder="Your email">
+    					<input type="email" name="email" placeholder="Your email" required>
   					</div>
   				</div>
   				<div class="row">
     				<div class="col-75">
       					<label for="subject">Your Message</label>
-      					<textarea name="message" placeholder="Write Your Message"></textarea>
+      					<textarea style="padding:50px;" name="message" placeholder="Write Your Message"></textarea>
     				</div>
   				</div>
   				<div class="row">

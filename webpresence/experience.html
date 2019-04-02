@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>Antoine's Webpresence</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/ContactForm.css">
+
+
+<style>
+* { box-sizing: border-box; } 
+
+body{background-color:#DCDCDC;
+}
+
+section{background-image:url(images/work.jpg);
+		background-size: cover;
+		background-position:center top;
+    	background-repeat: no-repeat; 
+    	width:auto;
+    	height:680px;
+}
+
+header { background-image: url(images/surf.png);
+		 background-size: cover;
+		 position:static;
+         background-repeat: no-repeat;  
+}
+
+   		
+span {display: inline;}
+
+h1 { position:relative;	
+     font-size: 200%;
+     padding: 5%;
+     font-family:"Gill Sans", sans-serif;	
+     color:white;
+}
+
+.left, .right{
+	position:relative;
+	width: 30%;
+	float:left;
+	margin-top:50px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#DCDCDC;
+	opacity: 0.9;
+	border-radius:10px;
+	border:5px solid #1560BD;
+
+	
+
+}
+.center{
+	position:relative;
+	width: 30%;
+	float:left;
+	margin-top:50px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#DCDCDC;
+	opacity: 0.9;
+	border-radius:10px;
+	border:5px solid #1560BD;
+	
+	
+
+}
+
+button{border-radius:10px;
+		border:1px solid black;}
+
+@media screen and (max-width: 650px) {
+
+.left, .right, .center{
+    width: 90%;
+    margin-top:20px;;
+  }
+}
+</style>
+
+<header>
+    <h1>ANTOINE'S WEBPRESENCE</h1>
+<nav id="navbar">
+<ul>
+  <li><a class="" href="homePage.html" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
+  <li><a class="" href="education.html">EDUCATION</a></li>
+  <li><a class="active" href="experience.html">EXPERIENCES</a></li>
+  <li><a class="" href="sport.html">SPORTS</a></li>
+  <li><a class="" href="#contact">TRAVELS</a></li>
+</ul>
+</nav>
+
+<script>
+var nav = document.getElementById("navbar");
+var btns = nav.getElementsByTagName("LI");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += "active";
+  });
+}
+</script>
+</header>
+<body>
+<section>
+	<div class="row">
+		<div class="left">
+		<h3 style="text-align:center"><strong>Internship In Supply Chain:</strong><br> WONDERBOX - PARIS<br>4 months (from May to August 2019)</h3>
+		<ul>
+			<li> Selling Forecast</li>
+			<li> Stock Management</li>
+			<li> Management of calls to tender</li>
+		</ul>
+		</div>
+		<div class="center">
+		<h3 style="text-align:center"><strong>Internship As A Machine Operator:<br> SAFRAN - PARIS</strong><br>2 months (from February to March 2018)</h3>
+		<ul>
+			<li> Purchased machine's tools</li>
+			<li> Stock Management</li>
+			<li> Improved the logistic in the warehouse</li>
+		</ul>
+		</div>
+		<div class="right">
+		<h3 style="text-align:center"><strong>Private Tutor: <br> PARIS</strong><br>2 years: 2015-2017</h3>
+		<ul>
+			<li> Helped 3 students to double their grades in Mathematics and Physics 
+			once a week for the French Baccalaureat Exam.</li>
+		</ul>
+		</div>
+	</div>
+	
+	<div style="text-align:center; margin-top:50px;">
+		<button onclick="myFunction()">Print My Experiences<br><br><i class="fas fa-print" style="font-size:16px; color:black;"></i></button>
+	
+		<script>
+			function myFunction() {
+ 			 window.print();
+			}
+		</script>
+	</div>
+</section>
+
+<footer style="text-align:center;" role="contentinfo">
+<hr>
+<small><i>&copy All rights are reserved to Antoine Motte 2019</i></small>
+</footer>
+</body>
+</html>
