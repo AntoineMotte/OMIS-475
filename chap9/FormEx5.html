@@ -103,7 +103,7 @@ for (var i = 0; i < btns.length; i++) {
 	<div class="center">
 	<div class="email">
     					<h3><bold>Music Survey</bold></h3>
-    					<form action="https://formspree.io/antoine-motte@hotmail.fr">
+    					<form method="POST" action="https://formspree.io/antoine-motte@hotmail.fr">
     					<div class="row">
     					<div class="col-75">
       					Name:<br>
@@ -130,7 +130,8 @@ for (var i = 0; i < btns.length; i++) {
   							<input type="radio" name="time" value=""> Never purchase
   							</div>
   						</fieldset>
-  							<datalist>
+						  <input list="location" >
+  							<datalist id="location">
     							<option value="At home">
     							<option value="In the car">
     							<option value="Anywhere (Spotify)">
