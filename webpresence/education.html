@@ -6,7 +6,6 @@
 integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/menu.css">
-<link rel="stylesheet" href="css/ContactForm.css">
 
 
 <style>
@@ -22,7 +21,7 @@ header { background-image: url(images/surf.png);
 }
 span {display: inline;}
 
-h1 { position:relative;	
+header h1 { position:relative;	
      font-size: 200%;
      padding: 5%;
      font-family:"Gill Sans", sans-serif;	
@@ -55,7 +54,9 @@ table{border: 3px solid #1560BD	;
 td{padding:10px;}
 	
 button{border-radius:10px;
-		border:1px solid black;}
+		border:1px solid black;
+		
+}
 
 @media screen and (max-width: 800px) {
 .left, .right{
@@ -91,7 +92,6 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 </header>
 
-<section>
 	<div class="row">
 		<div class="left">
 		<h3 style="font-family:Gill Sans, sans-serif;"><u>Educational Background:</u></h3>
@@ -210,8 +210,8 @@ for (var i = 0; i < btns.length; i++) {
 		</div>
 	</div>
 	
-	<div style="text-align:center; margin-top:30px;">
-		<button onclick="myFunction()">Print My Education Background<br><br><i class="fas fa-print" style="font-size:16px; color:black;"></i></button>
+		<div style="text-align:center;">
+		<button style="margin-top:20px;" onclick="myFunction()">Print My Educational Background<br><br><i class="fas fa-print" style="font-size:16px; color:black;"></i></button>
 	
 		<script>
 			function myFunction() {
@@ -219,12 +219,11 @@ for (var i = 0; i < btns.length; i++) {
 			}
 		</script>
 	</div>
-</section>
+</body>
 
 
 <footer style="text-align:center;" role="contentinfo">
 <hr>
 <small><i>&copy All rights are reserved to Antoine Motte 2019</i></small>
 </footer>
-</body>
 </html>

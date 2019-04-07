@@ -6,14 +6,15 @@
 integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/menu.css">
-<link rel="stylesheet" href="css/ContactForm.css">
 
 
 <style>
-* { box-sizing: border-box; } 
 
 body{background-color:#DCDCDC;
 }
+
+section{width:auto;
+	height:550px;}
 
 header { background-image: url(images/surf.png);
 		 background-size: cover;
@@ -21,19 +22,19 @@ header { background-image: url(images/surf.png);
          background-repeat: no-repeat;  
 }
 
-h1 { position:relative;	
+header h1 { position:relative;	
      font-size: 200%;
-     padding: 5%;
+     padding: 3%;
      font-family:"Gill Sans", sans-serif;	
      color:white;
 }
 
-p{font-size:150%;
-}
 
-div { position: relative; }
+div { position: relative;
+	font-size:150%;
+	}
 
-div ul {width: 350px; 
+div ul {width: 400px; 
 		list-style-type: none; }
 		
 div li{ display: inline; 
@@ -54,16 +55,20 @@ div a:hover span { display: block; position: absolute;
 }
 
 		
-.border{display: block; 
-	position: absolute;
-	top: 88px; left: 400px; text-align: center; 
-  	width:800px;
-	height:534px;
+.border{ 
+	position: relative;
+	top: 10px; 
+	left: 400px; 
+  	width:600px;
+	height:390px;
 	border-radius:10px;
-	border:5px solid #1560BD;
+	border:4px solid #1560BD;
 	color: #333;
 	font-style: italic; 
-	text-align:center;
+}
+
+p{position:relative;
+  left:-250px;
 }
                
 
@@ -76,69 +81,58 @@ div a:hover span { display: block; position: absolute;
 <ul>
   <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/homePage.html" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
   <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/education.html">EDUCATION</a></li>
-  <li><a class="active" href="https://antoinemotte.github.io/omis-475/webpresence/experience.html">EXPERIENCES</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/experience.html">EXPERIENCES</a></li>
   <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport.html">SPORTS</a></li>
   <li><a class="" href="#contact">TRAVELS</a></li>
 </ul>
 </nav>
-
-<script>
-var nav = document.getElementById("navbar");
-var btns = nav.getElementsByTagName("LI");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace("active", "");
-  this.className += "active";
-  });
-}
-</script>
 </header>
 
 <body>
+<section>
   <h1 style="text-align: center">WINDSURF GALLERY</h1>
 		<div>
 			<ul>
 				<li>
-					<a href="photo1.jpg"> <img id="demo" src="photo1.jpg" width="150" height="115" alt="Jason Polakow">
-      				<span><img src="photo1.jpg" width="800px" height="534px" alt="Jason Polakow">
-      				<br><p>Jason Polakow, the best Windsurfer in the world </p></span></a>
+					<a href="photo1.jpg"> <img id="demo" src="images/photo1.jpg" width="150" height="115" alt="Jason Polakow">
+      				<span><img src="images/photo1.jpg" width="600px" height="398px" alt="Jason Polakow">
+      				<br>Jason Polakow, the best Windsurfer in the world </span></a>
       			</li>
 				<li>
-				  <a href="photo2.jpg"> <img id="demo2" src="photo2.jpg" width="150" height="115" alt="Jump">
-      				<span><img src="photo2.jpg" width="800px" height="534px" alt="Jump">
-      				<br><p>Huge jump on a big wave </p></span></a>
+				  <a href="photo2.jpg"> <img id="demo2" src="images/photo2.jpg" width="150" height="115" alt="Jump">
+      				<span><img src="images/photo2.jpg" width="600px" height="398px" alt="Jump">
+      				<br>Huge jump on a big wave </span></a>
 				
 				</li>
 				<li>
-				   <a href="photo3.jpg"> <img id="demo3" src="photo3.jpg" width="150" height="115" alt="Jibe">
-      				<span><img src="photo3.jpg" width="800px" height="534px" alt="Jibe">
-      				<br><p>Jibe figure to turn around in Windsurf</p></span></a>
+				   <a href="photo3.jpg"> <img id="demo3" src="images/photo3.jpg" width="150" height="115" alt="Jibe">
+      				<span><img src="images/photo3.jpg" width="600px" height="398px" alt="Jibe">
+      				<br>Jibe figure to turn around in Windsurf</span></a>
 				  
 				</li>
 				<li>
-				  <a href="photo4.jpg"> <img id="demo4" src="photo4.jpg" width="150" height="115" alt="Aerial">
-      				<span><img src="photo4.jpg" width="800px" height="534px" alt="Aerial">
-      				<br><p>One of the most perfect jump in a wave: AERIAL</p></span></a>
+				  <a href="photo4.jpg"> <img id="demo4" src="images/photo4.jpg" width="150" height="115" alt="Aerial">
+      				<span><img src="images/photo4.jpg" width="600px" height="398px" alt="Aerial">
+      				<br>One of the most perfect jump in a wave: AERIAL</span></a>
 				 
 				</li>
 				<li>
-				  <a href="photo5.jpg"> <img id="demo5" src="photo5.jpg" width="150" height="115" alt="backloop">
-      				<span><img src="photo5.jpg" width="800px" height="534px" alt="backloop">
-      				<br><p>Backloop with only one foot</p></span></a>
+				  <a href="photo5.jpg"> <img id="demo5" src="images/photo5.jpg" width="150" height="115" alt="backloop">
+      				<span><img src="images/photo5.jpg" width="600px" height="398px" alt="backloop">
+      				<br>Backloop with only one foot</span></a>
 				  
 				</li>
 				<li>
-				  <a href="photo6.jpg"> <img id="demo6" src="photo6.jpg" width="150" height="115" alt="surf">
-      				<span><img src="photo6.jpg" width="800px" height="534px" alt="surf">
-      				<br><p>Surfing a big wave</p></span></a>
+				  <a href="photo6.jpg"> <img id="demo6" src="images/photo6.jpg" width="150" height="115" alt="surf">
+      				<span><img src="images/photo6.jpg" width="600px" height="398px" alt="surf">
+      				<br>Surfing a big wave</span></a>
 				  
 				</li>
 			</ul>
 		</div>
 		
 		<div id="test" class="border">
-		<p> Drag your mouse on one of the pictures to ZOOM</p>
+		<p>Drag your mouse on one of the pictures to ZOOM</p>
 		</div>
 <script>
 document.getElementById("demo").onmouseenter = function() {mouseEnter()};
@@ -202,6 +196,11 @@ function mouseLeave6() {
   document.getElementById("test").style = "border";
 }
 </script>
+</section>
 
 </body>
+<footer style="text-align:center;" role="contentinfo">
+<hr>
+<small><i>&copy All rights are reserved to Antoine Motte 2019</i></small>
+</footer>
 </html>
