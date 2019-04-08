@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Antoine's Webpresence</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/menu.css">
+
+
+<style>
+* { box-sizing: border-box; } 
+
+body{background-color:#DCDCDC;
+	
+}
+
+header { background-image: url(images/surf.png);
+		 background-size: cover;
+		 position:static;
+         background-repeat: no-repeat;  
+}
+span {display: inline;}
+
+header h1 { position:relative;	
+     font-size: 200%;
+     padding: 5%;
+     font-family:"Gill Sans", sans-serif;	
+     color:white;
+}
+
+section{
+	width: auto;
+	height:400px;
+}
+
+
+.border{border-radius:10px;
+	border:5px solid #1560BD;
+	}
+	
+	
+#grad{
+  height: 100%;
+  background-color: #1560BD; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#1560BD, #DCDCDC); /* Standard syntax (must be last) */
+}
+
+a { text-decoration:none;
+	color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top:0px; 
+    padding-top:100px;
+    font-size:150%;
+}
+
+@media screen and (max-width: 800px) {
+div{
+    width: 100%;
+  }
+}
+
+
+</style>
+
+<body>
+<header>
+    <h1>ANTOINE'S WEBPRESENCE</h1>
+<nav id="navbar">
+<ul>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/homePage.html" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/education.html">EDUCATION</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/experience.html">EXPERIENCES</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport0.html">SPORTS</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport.html">WINDSURF</a></li>
+  <li><a class="active" href="https://antoinemotte.github.io/omis-475/webpresence/contactMe.html">CONTACT ME</a></li>
+</ul>
+</nav>
+
+<script>
+var nav = document.getElementById("navbar");
+var btns = nav.getElementsByTagName("LI");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += "active";
+  });
+}
+</script>
+</header>
+<body>
+<section>
+<div id="grad">
+<p>
+<i class="fas fa-envelope" style="font-size:30px; color:black;"></i>   :     <a href="mailto:antoine-motte@hotmail.fr">@AntoineMotte</a><br><br>
+<i class="fas fa-phone" style="font-size:30px; color:black;"></i>   :     815-715-1225<br><br>
+<i class="fas fa-home" style="font-size:30px; color:black;"></i>   :     NIU Campus, Stevenson Tower, DeKalb IL
+</p>
+
+</div>
+</section>
+</body>
+
+
+<footer style="text-align:center;" role="contentinfo">
+<hr>
+<small><i>&copy All rights are reserved to Antoine Motte 2019</i></small>
+</footer>
+</html>

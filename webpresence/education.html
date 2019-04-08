@@ -52,10 +52,43 @@ table{border: 3px solid #1560BD	;
 }
 
 td{padding:10px;}
+
+a { text-decoration:none;
+	color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:120%;
+}
 	
 button{border-radius:10px;
 		border:1px solid black;
 		
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: lightblue; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1560BD; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 @media screen and (max-width: 800px) {
@@ -74,8 +107,9 @@ button{border-radius:10px;
   <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/homePage.html" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
   <li><a class="active" href="https://antoinemotte.github.io/omis-475/webpresence/education.html">EDUCATION</a></li>
   <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/experience.html">EXPERIENCES</a></li>
-  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport.html">SPORTS</a></li>
-  <li><a class="" href="#contact">TRAVELS</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport0.html">SPORTS</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport.html">WINDSURF</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/contactMe.html">CONTACT ME</a></li>
 </ul>
 </nav>
 
@@ -207,11 +241,19 @@ for (var i = 0; i < btns.length; i++) {
     			<td>Good Communication</td>
     			</tr>
 			</table>
+			<br><br><br><br><br>
+
 		</div>
 	</div>
 	
 		<div style="text-align:center;">
-		<button style="margin-top:20px;" onclick="myFunction()">Print My Educational Background<br><br><i class="fas fa-print" style="font-size:16px; color:black;"></i></button>
+		<p>
+		Follow these links to see the webpages that I have done during my HTML5 class at NIU:<br>
+		<a href="https://antoinemotte.github.io/omis-475/chap7ex8/windsurf.html" target="_blank">www.WebPage1.html</a> <br>
+		<a href="https://antoinemotte.github.io/omis-475/chap2/advantage.html" target="_blank">www.WebPage2.html</a> 
+		
+		</p>
+		<button onclick="myFunction()">Print My Educational Background<br><br><i class="fas fa-print" style="font-size:16px; color:black;"></i></button>
 	
 		<script>
 			function myFunction() {

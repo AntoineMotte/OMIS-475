@@ -55,6 +55,7 @@ header h1 { position:relative;
 .center{
 	position:relative;
 	width: 30%;
+	height:184px;
 	float:left;
 	margin-top:50px;
 	margin-left:10px;
@@ -68,9 +69,23 @@ header h1 { position:relative;
 
 }
 
+a { text-decoration:none;
+	color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:120%;
+    font-weight:bold;
+    
+}
+
 button{border-radius:10px;
 		border:1px solid black;}
-
+		
 @media screen and (max-width: 650px) {
 
 .left, .right, .center{
@@ -87,8 +102,9 @@ button{border-radius:10px;
   <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/homePage.html" ><i class="fas fa-home" style="font-size:16px; color:white;"></i>    ANTOINE</a></li>
   <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/education.html">EDUCATION</a></li>
   <li><a class="active" href="https://antoinemotte.github.io/omis-475/webpresence/experience.html">EXPERIENCES</a></li>
-  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport.html">SPORTS</a></li>
-  <li><a class="" href="#contact">TRAVELS</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport0.html">SPORTS</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/sport.html">WINDSURF</a></li>
+  <li><a class="" href="https://antoinemotte.github.io/omis-475/webpresence/contactMe.html">CONTACT ME</a></li>
 </ul>
 </nav>
 
@@ -115,14 +131,19 @@ for (var i = 0; i < btns.length; i++) {
 			<li> Management of calls to tender</li>
 		</ul>
 		</div>
-		<div class="center">
+		<div style="overflow: scroll;"class="center">
 		<h3 style="text-align:center"><strong>Internship As A Machine Operator:<br> SAFRAN - PARIS</strong><br>2 months (from February to March 2018)</h3>
 		<ul>
 			<li> Purchased machine's tools</li>
 			<li> Stock Management</li>
 			<li> Improved the logistic in the warehouse</li>
+			<li>Now Scroll this frame please !</li>
 		</ul>
+		<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
 		</div>
+		
 		<div class="right">
 		<h3 style="text-align:center"><strong>Private Tutor: <br> PARIS</strong><br>2 years: 2015-2017</h3>
 		<ul>
@@ -132,8 +153,12 @@ for (var i = 0; i < btns.length; i++) {
 		</div>
 	</div>
 	
-	<div style="text-align:center;">
-		<button style="margin-top:20px;" onclick="myFunction()">Print My Experiences<br><br><i class="fas fa-print" style="font-size:16px; color:black;"></i></button>
+	<div style="text-align:center; padding:300px;">
+			<p>
+				Contact Me to get more information: <br>
+				<i class="fas fa-envelope" style="font-size:30px; color:black;"></i>   :     <a href="mailto:antoine-motte@hotmail.fr">@AntoineMotte</a><br><br>
+			</p>
+		<button style="margin-top:0px;" onclick="myFunction()">Print My Experiences<br><br><i class="fas fa-print" style="font-size:16px; color:black;"></i></button>
 	
 		<script>
 			function myFunction() {
