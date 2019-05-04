@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Sayless<br>Customs</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Sayless Customs</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Custom pieces</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="jacket.jpg" style="width:400px; height: 300px;" onclick="onClick(this)" alt="Custom jacket">
+      <img src="jacket 1.jpg" style="width:400px; height: 400px;" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="jacket 2.jpg" style="width:400px; height: 320px;" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="hat.jpg" style="padding-left:30px; width:350px; height: 300px;" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="sayless.jpg" style="padding-left:50px; width:350px; height: 400px;" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="hat 3.jpg" style=" padding-left:70px; width:350px; height: 320px;" onclick="onClick(this)" alt="Scandinavian design">
+
+    </div>
+  </div>
+<p style="padding-top:20px;">Production is always more fullfilling than consumption. With us, you can learn how to provide a product
+ or a service of your own that helps or inspires others. While working with us you‘ll realize that being able to create the benefit for others is simply one of life’s truest joys. We welcome you to our website, and truly hope that you find what you're looking for!</p>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Our only restriction, is your creativeness. We can make your clothing dreams come to life!</p>
+    <p>We create and manufacture amazing embroidery, heat transfers and vinyl designs  with some of the finest
+ software, machines and materials around. We  like to use everything we know about our services equipment to simplify
+ the process of creating customs.     </p>
+  </div>
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="start patch.jpg" alt="start" style="width:100%; height:261px;">
+        <div class="w3-container">
+          <h3>Step 1</h3>
+          <p class="w3-opacity">starting the bespoke process</p>
+          <p>after selecting the proper medium for your design, one of our hightech machines is programmed with the project</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="patch maker.jpg" alt="Outline" style="width:100%; height:261px;">
+        <div class="w3-container">
+          <h3>step 2&3</h3>
+          <p class="w3-opacity">Setting the foundation</p>
+          <p>The machine starts by adding a outline, and then the base layer. This adds a nice structure to the piece. 
+		It then starrts to take form.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div style="height:475px;"class="w3-light-grey">
+        <img src="finished patch.jpg" alt="patch" style="width:100%; height:261px;">
+        <div class="w3-container">
+          <h3>Step 4</h3>
+          <p class="w3-opacity">finished product</p>
+          <p>The machine adds final details that really make the piece POP.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Creativity is our passion</p>
+    <p>Starting out, our business was home based embroidery service that only catered to college students using the word 
+of mouth. Now we’ve grown and continue to develop a once before hobby/side hustle into something much bigger than
+ ourselves. Our teams now consist of individual leaders who are so passionate about their creative and artistic abilities.
+ They've all committed themselves to the task of helping others produce quality custom apparel and designs for themselves
+ or to sell in bulk by providing their expertise and other resources.  
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div style="display:inline-block;" class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div style="height:538px;" class="w3-light-grey">
+        <img src="trenton.jpeg" alt="Trent" style="width:100%; height:300px;">
+        <div class="w3-container">
+          <h3>Trenton Hiley</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Trenton founded the company with one vision in mind, to make bespoke pieces more readily availble to the masses.
+		</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="Renard.jpg" alt="Renard" style="width:100%; height:300px;">
+        <div class="w3-container">
+          <h3>Renard Wilson</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Renard just likes to bring peoples visions to life. Having felt restricted by clothing that did not match his personal flavor, he likes to help other become fresh.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div style="height:538px;" class="w3-light-grey">
+        <img src="will.jpg" alt="Mike" style="width:100%; height:300px;">
+        <div class="w3-container">
+          <h3>Will Smith</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>The fresh prince himself is a pioneer of the flee style, and he adds his personal touch to every commisioned piece.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p> In order to create anything we need information about the person(s) or the person(s) that will be wearing
+ or the product. To obtain this information our Creative Crew has created a system where individuals or small businesses
+ like yourself  may set a date and time to speak with or meet in person with one of our lead creative consultants. We’ll help
+ you under our service and help find resources to design and create your ideas. We also provide you with new sales techniques
+ and marketing strategies to help your brand or business grow.  All you have to do is book your appointment with us in
+ advance and we will contact you within  24 hours to confirm your appointment. </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">online consultation</li>
+	<li class="w3-padding-16">5 free edits</li>
+        <li class="w3-padding-16">5% future discount</li>
+	
+        
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+	
+          <h2>$ 29.99</h2>
+          <span class="w3-opacity">per piece</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">In Person mock up</li>
+        <li class="w3-padding-16">unlimited edits</li>
+       
+        <li class="w3-padding-16">20% future discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+	
+          <h2>$49.99 </h2>
+          <span class="w3-opacity">per piece</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to Create you a one of a kind piece? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
