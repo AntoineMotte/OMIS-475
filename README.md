@@ -14,7 +14,7 @@ chapter 8: <a href="https://antoinemotte.github.io/omis-475/Chapter8/band8.html"
 chapter 9: <a href="https://antoinemotte.github.io/omis-475/chap9/FormEx3.html"> FeedBack Form </a> / 
 <a href="https://antoinemotte.github.io/omis-475/chap9/FormEx5.html"> Music Survey </a> <br> <br>
 
-<a href="https://antoinemotte.github.io/omis-475/FinalProject/sayless.html"> Final Project </a>
+<a href="https://antoinemotte.github.io/omis-475/finalproject/sayless.html"> Final Project </a>
 
 
 
