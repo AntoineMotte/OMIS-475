@@ -12,7 +12,7 @@ Chapter 6: <a href="https://antoinemotte.github.io/omis-475/chap6/photogallery.h
 chapter 7: <a href="https://antoinemotte.github.io/omis-475/chap7ex8/windsurf.html"> windsurf website</a> <br>
 chapter 8: <a href="https://antoinemotte.github.io/omis-475/Chapter8/band8.html"> Favorite Band</a> / <a href="https://antoinemotte.github.io/omis-475/Chapter8/sport8.html"> French Soccer Team</a> <br>
 chapter 9: <a href="https://antoinemotte.github.io/omis-475/chap9/FormEx3.html"> FeedBack Form </a> / 
-<a href="https://antoinemotte.github.io/omis-475/chap9/FormEx5.html"> Music Survey </a><br><br>
+<a href="https://antoinemotte.github.io/omis-475/chap9/FormEx5.html"> Music Survey </a> <br> <br>
 
 <a href="https://antoinemotte.github.io/omis-475/FinalProject/sayless.html"> Final Project </a>
 
